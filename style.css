@@ -898,14 +898,14 @@ footer{
   height: 1px;
   background-color: #aaa;
 }
-.bid-card{
+.detail-bid-card{
   border-color: #000080 !important;
 }
-.bid-card-header{
+.detail-bid-card-header{
   background: #000080;
   color: white;
 }
-.bid-card-body{
+.detail-bid-card-body{
   background-color: #F3F5FF;
   border-color: #000080 !important;
 }
@@ -956,4 +956,31 @@ footer{
 {
   color: #000080 !important;
   background-color: white !important;
+}
+.upcoming-grid{
+  margin: -10px;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  gap: 0px;
+  padding: 0px;
+  overflow: hidden;
+}
+.grid-item{
+  overflow: hidden;
+  padding: 10px;
+}
+.grid-item.main{
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.more-bid-card{
+  border-radius: 15px;
+}
+.more-bid-card-img{
+  border-radius: 15px;
+  width: 100%;
+  height: 80%;
+  background-image: url(./assets/images/ipad9girl.png);
 }
