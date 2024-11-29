@@ -957,6 +957,39 @@ footer{
   color: #000080 !important;
   background-color: white !important;
 }
+
+.blue-triangle {
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 25vw
+}
+
+.red-triangle {
+  position: absolute;
+  z-index: 100;
+  right: 0;
+  bottom: 0;
+  width: 25vw
+}
+@media screen and (max-width:991px) {
+  .blue-triangle {
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 60vw
+  }
+  
+  .red-triangle {
+    position: absolute;
+    z-index: 100;
+    right: 0;
+    bottom: 0;
+    width: 60vw
+  }
+}
 .upcoming-grid{
   margin: -10px;
   display: grid;
