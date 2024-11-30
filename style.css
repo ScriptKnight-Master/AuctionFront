@@ -1191,3 +1191,47 @@ font-size: 0.9rem;
 color: black;
 line-height: 1.4rem;
 }
+#FaqAccordion .accordion-item{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 1px 4px 4px 0px rgba(0,0,0,0.2);
+}
+#FaqAccordion .accordion-header,
+#FaqAccordion .accordion-collapse{
+  border-bottom: none;
+}
+#FaqAccordion .accordion-header p,
+#FaqAccordion .accordion-body{
+  width: 80%;
+}
+
+#FaqAccordion .accordion-body,
+#FaqAccordion .accordion-collapse{
+  border-top: none;
+}
+#FaqAccordion .accordion-button{
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #222;
+}
+#FaqAccordion .accordion-button:not(.collapsed) {
+  background-color: white;
+  color: #222;
+}
+/* Custom icon for collapsed state (icon when accordion is collapsed) */
+#FaqAccordion .accordion-button.collapsed::after {
+  width: 30px;
+  height: 30px;
+  background-size: contain;
+  background-image: url('./assets/images/collapse.png'); /* Replace with your own icon URL */
+}
+
+/* Custom icon for expanded state (icon when accordion is expanded) */
+#FaqAccordion .accordion-button:not(.collapsed)::after {
+  width: 30px;
+  height: 30px;
+  background-size: contain;
+  background-image: url('./assets/images/incollapse.png'); /* Replace with your own icon URL */
+}
