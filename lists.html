@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>BidAwesome - Auction HTML Website Template</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="author" content="">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+  <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="assets/css/vendor.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&f amily=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- <div class="backimage"></div> -->
+  <div class="preloader-wrapper">
+    <div class="preloader">
+    </div>
+  </div>
+
+  <header>
+    <div class="container-fluid">
+      <div class="row py-3">
+        <div class="d-flex w-100 justify-content-between justify-content-sm-between align-items-center">
+          <nav class="main-menu w-100  d-flex navbar navbar-expand-lg">
+            <a href="#women" class="nav-link"><img src="./assets/images/logo.png" alt="Logo Image" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel" style="background-color: #000080;">
+
+              <div class="offcanvas-header justify-content-between w-100">
+                <a href="#home" class="nav-link"><img src="./assets/images/logo_white.png"
+                    style="height: 28px; width: 192px;" alt="Logo Image" /></a>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+
+              <div class="offcanvas-body">
+                <div class="d-flex w-100 flex-direction-row justify-content-lg-between justify-content-center">
+                  <div class="auction-logo">
+
+                  </div>
+                  <ul
+                    class="navbar-nav align-items-center justify-content-end menu-list list-unstyled d-flex gap-md-3 mb-0">
+                    <li class="nav-item active">
+                      <a href="#home" class="nav-link satosh">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#products" class="nav-link satosh">Products</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#Testimonials" class="nav-link satosh">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#Blogs" class="nav-link satosh">Blogs</a>
+                    </li>
+                    <li class="nav-item signin">
+                      <a href="#Blogs" class="nav-link satosh">
+                        <button class="btn btn-primary" type="button"><i class="fa fa-user-circle"></i>&nbsp;Sign
+                          In</button>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Bread Crumbs -->
+  <section class="py-5 overflow-hidden pb-2">
+    <div class="container-fluid">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#"><i class="fa fa-home"></i></a></li>
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Product Page</a></li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+
+
+
+  <!-- Auctions Category Lists  -->
+  <section class="py-5 overflow-hidden">
+    <div class="container-fluid">
+      <!-- Category Title and Pagination -->
+      <div class="d-flex justify-content-between flex-wrap my-4">
+        <h2>Current Auctions</h2>
+        <select class="px-4 py-2" style="border-radius: 8px;">
+          <option>Time: Ending Soonest</option>
+          <option>Time: Ending Loosest</option>
+        </select>
+      </div>
+      <div class="d-flex justify-content-center justify-content-md-between flex-wrap">
+        <p style="font-size: 0.8rem;">Showing 1 to 40 of 2975 entries 12345</p>
+        <nav aria-label="Page navigation">
+          <ul class="pagination auction-pagination">
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+              </a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="LeftEnd">
+                <span aria-hidden="true">&lt;</span>
+              </a>
+            </li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">5</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true">&gt;</span>
+              </a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="RightEnd">
+                <span aria-hidden="true">&raquo;</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- Auctions List -->
+      <div class="row">
+        <div class="col-md-4 col-lg-3 col-sm-6">
+          <div class="bid-card">
+            <div style="aspect-ratio: 1.25;">
+              <div class="bid-card-img" style="background-image: url(./assets/images/uncertain.png);">
+              </div>
+            </div>
+            <div class="bid-card-panel">
+              <h4 class="my-3">Apple iPad 9</h4>
+              <p style="font-size: 12px; line-height: 17px;">Lorem ipsum dolor sit amet adipiscing
+                sed do eiusmod tempor</p>
+              <div class="d-flex flex-direction-row justify-content-between flex-wrap my-1">
+                <div style="background-color: #f7f7f7; height: 45px; padding: 5px; border-radius: 7px; padding: 7px;">
+                  <p style="font-size: 10px; line-height: 10px; text-align: left; margin: 0; font-weight: bold;">
+                    BIDOMETER
+                  </p>
+                  <p style="height: 20px; margin: 0; line-height: 20px; letter-spacing: 0;">
+                    <span
+                      style="width: 8px; height: 13px; margin-right:-3px; line-height: 15px; background-color: #000080; border-radius: 2px; display: inline-block; margin-bottom: -4px;"></span>
+                    <span
+                      style="width: 8px; height: 13px; margin-right:-3px; line-height: 15px; background-color: #000080; border-radius: 2px; display: inline-block; margin-bottom: -4px;"></span>
+                    <span
+                      style="width: 8px; height: 13px; margin-right:-3px; line-height: 15px; background-color: #000080; border-radius: 2px; display: inline-block; margin-bottom: -4px;"></span>
+                    <span
+                      style="width: 8px; height: 13px; margin-right:-3px; line-height: 15px; background-color: #000080; border-radius: 2px; display: inline-block; margin-bottom: -4px;"></span>
+                    <span
+                      style="width: 8px; height: 13px; margin-right:-3px; line-height: 15px; background-color: rgba(0,0,130,0.2); border-radius: 2px; display: inline-block; margin-bottom: -4px;"></span>
+                    <span
+                      style="width: 8px; height: 13px; margin-right:-3px; line-height: 15px; background-color: rgba(0,0,130,0.2); border-radius: 2px; display: inline-block; margin-bottom: -4px;"></span>
+                    <span
+                      style="width: 8px; height: 13px; margin-right:-3px; line-height: 15px; background-color: rgba(0,0,130,0.2); border-radius: 2px; display: inline-block; margin-bottom: -4px;"></span>
+                    <span
+                      style="width: 8px; height: 13px; margin-right:-3px; line-height: 15px; background-color: rgba(0,0,130,0.2); border-radius: 2px; display: inline-block; margin-bottom: -4px;"></span>
+                    <span
+                      style="width: 8px; height: 13px; margin-right:-3px; line-height: 15px; background-color: rgba(0,0,130,0.2); border-radius: 2px; display: inline-block; margin-bottom: -4px;"></span>
+                    <span
+                      style="width: 8px; height: 13px; margin-right:-3px; line-height: 15px; background-color: rgba(0,0,130,0.2); border-radius: 2px; display: inline-block; margin-bottom: -4px;"></span>
+                  </p>
+                </div>
+                <div style="background-color: #f7f7f7; height: 45px; border-radius: 7px; padding: 7px;">
+                  <span style="font-size: 12px; font-weight: bold; line-height: 31px;">Cost to Bid: $3</span>
+                </div>
+              </div>
+              <div class="my-3 btn btn-outline bid-card-place-btn">
+                Place Your Bid
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-3 col-sm-6">
+          <div class="bid-card">
+            <div style="aspect-ratio: 1.25;">
+              <div class="bid-card-img" style="background-image: url(./assets/images/uncertain.png);">
+              </div>
+            </div>
+            <div class="bid-card-panel">
+              <h4 class="my-3">Apple iPad 9</h4>
+              <p style="font-size: 12px; line-height: 17px;">Lorem ipsum dolor sit amet adipiscing
+                sed do eiusmod tempor</p>
+              <div class="d-flex flex-direction-row justify-content-between flex-wrap my-1">
+                <div style="background-color: #f7f7f7; height: 45px; padding: 5px; border-radius: 7px; padding: 7px;">
+                  <p style="font-size: 10px; line-height: 10px; text-align: left; margin: 0; font-weight: bold;">
+                    BIDOMETER
+                  </p>
+                  <p style="height: 20px; margin: 0; line-height: 20px; letter-spacing: 0;">
+                    <span
+                      style="width: 8px; height: 13px; margin-right:-3px; line-height: 15px; background-color: #000080; border-radius: 2px; display: inline-block; margin-bottom: -4px;"></span>
+                    <span
+                      style="width: 8px; height: 13px; margin-right:-3px; line-height: 15px; background-color: #000080; border-radius: 2px; display: inline-block; margin-bottom: -4px;"></span>
+                    <span
+                      style="width: 8px; height: 13px; margin-right:-3px; line-height: 15px; background-color: #000080; border-radius: 2px; display: inline-block; margin-bottom: -4px;"></span>
+                    <span
+                      style="width: 8px; height: 13px; margin-right:-3px; line-height: 15px; background-color: #000080; border-radius: 2px; display: inline-block; margin-bottom: -4px;"></span>
+                    <span
+                      style="width: 8px; height: 13px; margin-right:-3px; line-height: 15px; background-color: rgba(0,0,130,0.2); border-radius: 2px; display: inline-block; margin-bottom: -4px;"></span>
+                    <span
+                      style="width: 8px; height: 13px; margin-right:-3px; line-height: 15px; background-color: rgba(0,0,130,0.2); border-radius: 2px; display: inline-block; margin-bottom: -4px;"></span>
+                    <span
+                      style="width: 8px; height: 13px; margin-right:-3px; line-height: 15px; background-color: rgba(0,0,130,0.2); border-radius: 2px; display: inline-block; margin-bottom: -4px;"></span>
+                    <span
+                      style="width: 8px; height: 13px; margin-right:-3px; line-height: 15px; background-color: rgba(0,0,130,0.2); border-radius: 2px; display: inline-block; margin-bottom: -4px;"></span>
+                    <span
+                      style="width: 8px; height: 13px; margin-right:-3px; line-height: 15px; background-color: rgba(0,0,130,0.2); border-radius: 2px; display: inline-block; margin-bottom: -4px;"></span>
+                    <span
+                      style="width: 8px; height: 13px; margin-right:-3px; line-height: 15px; background-color: rgba(0,0,130,0.2); border-radius: 2px; display: inline-block; margin-bottom: -4px;"></span>
+                  </p>
+                </div>
+                <div style="background-color: #f7f7f7; height: 45px; border-radius: 7px; padding: 7px;">
+                  <span style="font-size: 12px; font-weight: bold; line-height: 31px;">Cost to Bid: $3</span>
+                </div>
+              </div>
+              <div class="my-3 btn btn-outline bid-card-place-btn">
+                Place Your Bid
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-3 col-sm-6">
+          <div class="bid-card">
+            <div style="aspect-ratio: 1.25;">
+              <div class="bid-card-img" style="background-image: url(./assets/images/uncertain.png);">
+              </div>
+            </div>
+            <div class="bid-card-panel">
+              <h4 class="my-3">Apple iPad 9</h4>
+              <p style="font-size: 12px; line-height: 17px;">Lorem ipsum dolor sit amet adipiscing
+                sed do eiusmod tempor</p>
+              <div class="d-flex flex-direction-row justify-content-between flex-wrap my-1">
+                <div style="background-color: #f7f7f7; height: 45px; padding: 5px; border-radius: 7px; padding: 7px;">
+                  <p style="font-size: 10px; line-height: 10px; text-align: left; margin: 0; font-weight: bold;">
+                    BIDOMETER
+                  </p>
+                  <p style="height: 20px; margin: 0; line-height: 20px; letter-spacing: 0;">
+                    <span
+                      style="width: 8px; height: 13px; margin-right:-3px; line-height: 15px; background-color: #000080; border-radius: 2px; display: inline-block; margin-bottom: -4px;"></span>
+                    <span
+                      style="width: 8px; height: 13px; margin-right:-3px; line-height: 15px; background-color: #000080; border-radius: 2px; display: inline-block; margin-bottom: -4px;"></span>
+                    <span
+                      style="width: 8px; height: 13px; margin-right:-3px; line-height: 15px; background-color: #000080; border-radius: 2px; display: inline-block; margin-bottom: -4px;"></span>
+                    <span
+                      style="width: 8px; height: 13px; margin-right:-3px; line-height: 15px; background-color: #000080; border-radius: 2px; display: inline-block; margin-bottom: -4px;"></span>
+                    <span
+                      style="width: 8px; height: 13px; margin-right:-3px; line-height: 15px; background-color: rgba(0,0,130,0.2); border-radius: 2px; display: inline-block; margin-bottom: -4px;"></span>
+                    <span
+                      style="width: 8px; height: 13px; margin-right:-3px; line-height: 15px; background-color: rgba(0,0,130,0.2); border-radius: 2px; display: inline-block; margin-bottom: -4px;"></span>
+                    <span
+                      style="width: 8px; height: 13px; margin-right:-3px; line-height: 15px; background-color: rgba(0,0,130,0.2); border-radius: 2px; display: inline-block; margin-bottom: -4px;"></span>
+                    <span
+                      style="width: 8px; height: 13px; margin-right:-3px; line-height: 15px; background-color: rgba(0,0,130,0.2); border-radius: 2px; display: inline-block; margin-bottom: -4px;"></span>
+                    <span
+                      style="width: 8px; height: 13px; margin-right:-3px; line-height: 15px; background-color: rgba(0,0,130,0.2); border-radius: 2px; display: inline-block; margin-bottom: -4px;"></span>
+                    <span
+                      style="width: 8px; height: 13px; margin-right:-3px; line-height: 15px; background-color: rgba(0,0,130,0.2); border-radius: 2px; display: inline-block; margin-bottom: -4px;"></span>
+                  </p>
+                </div>
+                <div style="background-color: #f7f7f7; height: 45px; border-radius: 7px; padding: 7px;">
+                  <span style="font-size: 12px; font-weight: bold; line-height: 31px;">Cost to Bid: $3</span>
+                </div>
+              </div>
+              <div class="my-3 btn btn-outline bid-card-place-btn">
+                Place Your Bid
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-3 col-sm-6">
+          <div class="bid-card">
+            <div style="aspect-ratio: 1.25;">
+              <div class="bid-card-img" style="background-image: url(./assets/images/uncertain.png);">
+              </div>
+            </div>
+            <div class="bid-card-panel">
+              <h4 class="my-3">Apple iPad 9</h4>
+              <p style="font-size: 12px; line-height: 17px;">Lorem ipsum dolor sit amet adipiscing
+                sed do eiusmod tempor</p>
+              <div class="d-flex flex-direction-row justify-content-between flex-wrap my-1">
+                <div style="background-color: #f7f7f7; height: 45px; padding: 5px; border-radius: 7px; padding: 7px;">
+                  <p style="font-size: 10px; line-height: 10px; text-align: left; margin: 0; font-weight: bold;">
+                    BIDOMETER
+                  </p>
+                  <p style="height: 20px; margin: 0; line-height: 20px; letter-spacing: 0;">
+                    <span
+                      style="width: 8px; height: 13px; margin-right:-3px; line-height: 15px; background-color: #000080; border-radius: 2px; display: inline-block; margin-bottom: -4px;"></span>
+                    <span
+                      style="width: 8px; height: 13px; margin-right:-3px; line-height: 15px; background-color: #000080; border-radius: 2px; display: inline-block; margin-bottom: -4px;"></span>
+                    <span
+                      style="width: 8px; height: 13px; margin-right:-3px; line-height: 15px; background-color: #000080; border-radius: 2px; display: inline-block; margin-bottom: -4px;"></span>
+                    <span
+                      style="width: 8px; height: 13px; margin-right:-3px; line-height: 15px; background-color: #000080; border-radius: 2px; display: inline-block; margin-bottom: -4px;"></span>
+                    <span
+                      style="width: 8px; height: 13px; margin-right:-3px; line-height: 15px; background-color: rgba(0,0,130,0.2); border-radius: 2px; display: inline-block; margin-bottom: -4px;"></span>
+                    <span
+                      style="width: 8px; height: 13px; margin-right:-3px; line-height: 15px; background-color: rgba(0,0,130,0.2); border-radius: 2px; display: inline-block; margin-bottom: -4px;"></span>
+                    <span
+                      style="width: 8px; height: 13px; margin-right:-3px; line-height: 15px; background-color: rgba(0,0,130,0.2); border-radius: 2px; display: inline-block; margin-bottom: -4px;"></span>
+                    <span
+                      style="width: 8px; height: 13px; margin-right:-3px; line-height: 15px; background-color: rgba(0,0,130,0.2); border-radius: 2px; display: inline-block; margin-bottom: -4px;"></span>
+                    <span
+                      style="width: 8px; height: 13px; margin-right:-3px; line-height: 15px; background-color: rgba(0,0,130,0.2); border-radius: 2px; display: inline-block; margin-bottom: -4px;"></span>
+                    <span
+                      style="width: 8px; height: 13px; margin-right:-3px; line-height: 15px; background-color: rgba(0,0,130,0.2); border-radius: 2px; display: inline-block; margin-bottom: -4px;"></span>
+                  </p>
+                </div>
+                <div style="background-color: #f7f7f7; height: 45px; border-radius: 7px; padding: 7px;">
+                  <span style="font-size: 12px; font-weight: bold; line-height: 31px;">Cost to Bid: $3</span>
+                </div>
+              </div>
+              <div class="my-3 btn btn-outline bid-card-place-btn">
+                Place Your Bid
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-3 col-sm-6">
+          <div class="bid-card">
+            <div style="aspect-ratio: 1.25;">
+              <div class="bid-card-img" style="background-image: url(./assets/images/uncertain.png);">
+              </div>
+            </div>
+            <div class="bid-card-panel">
+              <h4 class="my-3">Apple iPad 9</h4>
+              <p style="font-size: 12px; line-height: 17px;">Lorem ipsum dolor sit amet adipiscing
+                sed do eiusmod tempor</p>
+              <div class="d-flex flex-direction-row justify-content-between flex-wrap my-1">
+                <div style="background-color: #f7f7f7; height: 45px; padding: 5px; border-radius: 7px; padding: 7px;">
+                  <p style="font-size: 10px; line-height: 10px; text-align: left; margin: 0; font-weight: bold;">
+                    BIDOMETER
+                  </p>
+                  <p style="height: 20px; margin: 0; line-height: 20px; letter-spacing: 0;">
+                    <span
+                      style="width: 8px; height: 13px; margin-right:-3px; line-height: 15px; background-color: #000080; border-radius: 2px; display: inline-block; margin-bottom: -4px;"></span>
+                    <span
+                      style="width: 8px; height: 13px; margin-right:-3px; line-height: 15px; background-color: #000080; border-radius: 2px; display: inline-block; margin-bottom: -4px;"></span>
+                    <span
+                      style="width: 8px; height: 13px; margin-right:-3px; line-height: 15px; background-color: #000080; border-radius: 2px; display: inline-block; margin-bottom: -4px;"></span>
+                    <span
+                      style="width: 8px; height: 13px; margin-right:-3px; line-height: 15px; background-color: #000080; border-radius: 2px; display: inline-block; margin-bottom: -4px;"></span>
+                    <span
+                      style="width: 8px; height: 13px; margin-right:-3px; line-height: 15px; background-color: rgba(0,0,130,0.2); border-radius: 2px; display: inline-block; margin-bottom: -4px;"></span>
+                    <span
+                      style="width: 8px; height: 13px; margin-right:-3px; line-height: 15px; background-color: rgba(0,0,130,0.2); border-radius: 2px; display: inline-block; margin-bottom: -4px;"></span>
+                    <span
+                      style="width: 8px; height: 13px; margin-right:-3px; line-height: 15px; background-color: rgba(0,0,130,0.2); border-radius: 2px; display: inline-block; margin-bottom: -4px;"></span>
+                    <span
+                      style="width: 8px; height: 13px; margin-right:-3px; line-height: 15px; background-color: rgba(0,0,130,0.2); border-radius: 2px; display: inline-block; margin-bottom: -4px;"></span>
+                    <span
+                      style="width: 8px; height: 13px; margin-right:-3px; line-height: 15px; background-color: rgba(0,0,130,0.2); border-radius: 2px; display: inline-block; margin-bottom: -4px;"></span>
+                    <span
+                      style="width: 8px; height: 13px; margin-right:-3px; line-height: 15px; background-color: rgba(0,0,130,0.2); border-radius: 2px; display: inline-block; margin-bottom: -4px;"></span>
+                  </p>
+                </div>
+                <div style="background-color: #f7f7f7; height: 45px; border-radius: 7px; padding: 7px;">
+                  <span style="font-size: 12px; font-weight: bold; line-height: 31px;">Cost to Bid: $3</span>
+                </div>
+              </div>
+              <div class="my-3 btn btn-outline bid-card-place-btn">
+                Place Your Bid
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Pagination -->
+      <div class="d-flex justify-content-center justify-content-md-space flex-wrap">
+        <p style="font-size: 0.8rem;" class="px-5">Showing 1 to 40 of 2975 entries 12345</p>
+
+        <nav aria-label="Page navigation">
+          <ul class="pagination auction-pagination">
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+              </a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="LeftEnd">
+                <span aria-hidden="true">&lt;</span>
+              </a>
+            </li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">5</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true">&gt;</span>
+              </a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="RightEnd">
+                <span aria-hidden="true">&raquo;</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-5">
+    <div class="container-fluid  py-5">
+      <div class="row">
+        <div class="col-lg-5 col-md-6 col-sm-6">
+          <div class="footer-menu py-3">
+            <img src="./assets/images/footer-logo.png" alt="footer logo image" class="footer-logo">
+            <div class="social-links mt-5">
+              Lorem ipsum dolor sit amet, consectetur adipi elit.Lorem ipsum dolor sit amet, consectetur adipi elit.
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2 col-sm-6">
+          <div class="footer-menu py-3">
+            <h5 class="widget-title">Quick Links</h5>
+            <ul class="menu-list list-unstyled">
+              <li class="menu-item">
+                <a href="#" class="nav-link">Personal Information</a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="nav-link">Open Orders </a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="nav-link">Auctions in Progress</a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="nav-link">Closed Acutions</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-6">
+          <div class="footer-menu py-3">
+            <h5 class="widget-title">Support</h5>
+            <ul class="menu-list list-unstyled">
+              <li class="menu-item">
+                <a href="#" class="nav-link">Help Center</a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="nav-link">Contact Support</a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="nav-link">FAQ</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-6">
+          <div class="footer-menu py-3">
+            <h5 class="widget-title">Contact us</h5>
+            <ul class="menu-list list-unstyled">
+              <li class="menu-item">
+                <a href="#" class="nav-link">123-456-7890</a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="nav-link">info@BidAwesome.com</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+  <div id="footer-bottom">
+    <div class="container-fluid">
+      <div class="footerline"></div>
+      <p class="text-center">Copyright © 2024 BidAwesome. All rights reserved</p>
+    </div>
+  </div>
+  <script src="assets/js/jquery-1.11.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <script src="assets/js/plugins.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>

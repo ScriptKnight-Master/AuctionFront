@@ -1235,3 +1235,20 @@ line-height: 1.4rem;
   background-size: contain;
   background-image: url('./assets/images/incollapse.png'); /* Replace with your own icon URL */
 }
+
+/* Auction List pagination */
+.auction-pagination .page-link{
+  border: none !important;
+  font-family: Satosh;
+  color: black;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 3px 12px;
+}
+.auction-pagination .active>.page-link, .page-link.active {
+  z-index: 3;
+  color: var(--bs-pagination-active-color);
+  background-color: #D74712;
+  border-color: var(--bs-pagination-active-border-color);
+  border-radius: 10px;
+}
