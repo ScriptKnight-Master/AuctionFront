@@ -1252,3 +1252,80 @@ line-height: 1.4rem;
   border-color: var(--bs-pagination-active-border-color);
   border-radius: 10px;
 }
+/* Detail page */
+.auction-detail-image-panel{
+  background-color: #eeeeee;
+  position: relative;
+  width: 80%;
+  margin: auto;
+  border-radius: 20px;
+  aspect-ratio: 1;
+}
+.auction-detail-image-panel .like{
+  position: absolute; 
+  left: 30px;
+  top: 30px;
+  width: 30px; 
+  height: 30px; 
+  border-radius: 15px;
+  background: white;
+  color: black;
+  display: block;
+}
+
+.auction-detail-related-image-panel{
+  position: relative;
+  width: 80% !important;
+  margin: auto;
+  border-radius: 20px;
+}
+.auction-detail-related-image-panel .smlike{
+  display: none;
+  }
+@media screen and (max-width: 991px){
+  .auction-detail-related-image-panel{
+    position: relative;
+    width: 100% !important;
+    margin: auto;
+    border-radius: 20px;
+  }
+  .auction-detail-related-image-panel .like{
+    position: absolute; 
+    display: block;
+    left: 30px;
+    top: 30px;
+    width: 30px; 
+    height: 30px; 
+    border-radius: 15px;
+    background: white;
+    color: black;
+  }
+  .auction-detail-image-panel{
+    display: none;
+  }
+  .auction-detail-image-panel .like{
+    display: none;
+  }
+  .swiper-related-div-for-btn{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  .related-carousel-prev,
+  .related-carousel-next{
+    display: none !important;
+  }
+  .sm-pagination{
+    display: block !important;
+  }
+}
+.swiper-related-div-for-btn{
+  padding-left: 60px;
+  padding-right: 60px;
+}
+.related-carousel-prev,
+.related-carousel-next{
+  display: block;
+}
+.sm-pagination{
+  display: none;
+}

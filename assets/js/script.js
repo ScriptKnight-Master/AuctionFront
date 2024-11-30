@@ -23,34 +23,35 @@
 
   var initSwiper = function () {
 
-    var swiper = new Swiper(".main-swiper", {
+    // var swiper = new Swiper(".main-swiper", {
+    //   speed: 500,
+    //   pagination: {
+    //     el: ".swiper-pagination",
+    //     clickable: true,
+    //   },
+    // });
+
+    var related_swiper = new Swiper(".related-carousel", {
+      slidesPerView: 6,
+      spaceBetween: 30,
       speed: 500,
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
       },
-    });
-
-    var category_swiper = new Swiper(".category-carousel", {
-      slidesPerView: 6,
-      spaceBetween: 30,
-      speed: 500,
       navigation: {
-        nextEl: ".category-carousel-next",
-        prevEl: ".category-carousel-prev",
+        nextEl: ".related-carousel-next",
+        prevEl: ".related-carousel-prev",
       },
       breakpoints: {
         0: {
-          slidesPerView: 2,
-        },
-        768: {
-          slidesPerView: 3,
+          slidesPerView: 1,
         },
         991: {
-          slidesPerView: 4,
+          slidesPerView: 2,
         },
         1500: {
-          slidesPerView: 6,
+          slidesPerView: 3,
         },
       }
     });
