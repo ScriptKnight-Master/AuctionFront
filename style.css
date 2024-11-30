@@ -1175,3 +1175,19 @@ footer{
   justify-content: center;
   align-items: center;
 }
+.category-card{
+  aspect-ratio: 2.5 !important;
+  background-color: white;
+  padding: 15px;
+  padding-left: 10%;
+  padding-right: 10%;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.category-card p{
+font-size: 0.9rem;
+color: black;
+line-height: 1.4rem;
+}
