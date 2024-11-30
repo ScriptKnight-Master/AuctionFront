@@ -1089,6 +1089,10 @@ footer{
 }
 
 /* Carousel */
+.swiper-div-for-btn{
+  padding-left: 60px;
+  padding-right: 60px;
+}
 .carousel-prev-btn{
   position: absolute;
   left: 10px;
@@ -1109,6 +1113,38 @@ footer{
   background-color: white;
   border: 1px solid #aaa;
 }
+@media screen and (max-width:768px) {
+  .swiper-div-for-btn{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .carousel-prev-btn{
+    position: absolute;
+    left: calc(50% - 50px);
+    top: 100%;
+    border-radius: 50%;
+    width: 40px !important;
+    height: 40px !important;
+    background-color: white;
+    border: 1px solid #aaa;
+  }
+  .carousel-next-btn{
+    position: absolute;
+    right: calc(50% - 50px);
+    top: 100%;
+    border-radius: 50%;
+    width: 40px !important;
+    height: 40px !important;
+    background-color: white;
+    border: 1px solid #aaa;
+  }
+  .btn-carousel-more-btn{
+    display: none !important;
+  }
+}
+.btn-carousel-more-btn{
+  display: block;
+}
 .bid-card-place-btn{
   padding-top: 10px;
   padding-bottom: 10px;
@@ -1116,6 +1152,7 @@ footer{
   border: 1px solid #999999;
 }
 .bid-card-place-btn:hover{
-  background-color: #f7f7f7;
+  background-color: #D74712;
+  color: white;
   border: 1px solid #666666;
 }
