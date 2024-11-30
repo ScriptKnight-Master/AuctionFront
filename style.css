@@ -491,9 +491,9 @@ header{
   text-align: center;
   border-radius: 10px;
   --bs-btn-border-color: transparent;
-  --bs-btn-active-bg: #ec9b22;
+  --bs-btn-active-bg: #fcfcfc;
   --bs-btn-active-border-color: transparent;
-  --bs-btn-hover-bg: #000080;
+  --bs-btn-hover-bg: #f7f7f7;
   --bs-btn-hover-border-color: transparent;
   --bs-btn-disabled-color: #ccc;
   --bs-btn-disabled-bg: #eaeaea;
@@ -501,7 +501,7 @@ header{
 }
 .swiper-prev:hover,
 .swiper-next:hover {
-  background: #000080;
+  background: #f7f7f7;
 }
 .btn-link {
   margin-right: 30px;
@@ -514,18 +514,13 @@ header{
 }
 /* category carousel */
 .category-carousel .category-item {
-  background: #FFFFFF;
-  border: 1px solid #FBFBFB;
-  box-shadow: 0px 5px 22px rgba(0, 0, 0, 0.04);
   border-radius: 16px;
-  text-align: center;
-  padding: 60px 20px;
   margin: 20px 0;
   transition: box-shadow 0.3s ease-out, transform 0.3s ease-out;
 }
 .category-carousel .category-item:hover {
   transform: translate3d(0,-10px,0);
-  box-shadow: 0px 21px 44px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.08);
 }
 .category-carousel .category-item .category-title {
   font-weight: 600;
@@ -1039,6 +1034,7 @@ footer{
   border-top-right-radius: 15px;
   width: 100%;
   height: 100%;
+  background-color: #f5f5f7;
   background-size: cover;
   background-image: url(./assets/images/ipad9girl.png);
 }
@@ -1080,4 +1076,46 @@ footer{
   background-color: #000162;
   color: white;
   line-height: 33px;
+}
+.about{
+  font-size: 1.3rem;
+  line-height: 2rem;
+}
+@media screen and (max-width:991px) {
+  .about{
+    font-size: 1rem !important;
+    line-height: 1.5rem;
+  }
+}
+
+/* Carousel */
+.carousel-prev-btn{
+  position: absolute;
+  left: 10px;
+  top: calc(50% - 20px);
+  border-radius: 50%;
+  width: 40px !important;
+  height: 40px !important;
+  background-color: white;
+  border: 1px solid #aaa;
+}
+.carousel-next-btn{
+  position: absolute;
+  right: 10px;
+  top: calc(50% - 20px);
+  border-radius: 50%;
+  width: 40px !important;
+  height: 40px !important;
+  background-color: white;
+  border: 1px solid #aaa;
+}
+.bid-card-place-btn{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  border: 1px solid #999999;
+}
+.bid-card-place-btn:hover{
+  background-color: #f7f7f7;
+  border: 1px solid #666666;
 }
