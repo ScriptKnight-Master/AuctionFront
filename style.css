@@ -884,6 +884,28 @@ footer{
   margin-top: -3.4rem;
   }
 }
+.pre-h2-birdy{
+  display: inline;
+  width: 3.5rem;
+  margin-right: -2.2rem;
+  margin-top: -3.9rem;
+}
+@media screen and (max-width:440px) {
+  .pre-h2-birdy{
+    display: none;
+  }
+}
+.pre-h2-sm-birdy{
+  display: none;
+}
+@media screen and (max-width:440px) {
+  .pre-h2-sm-birdy{
+  display: inline;
+  width: 3.5rem;
+  margin-right: -1.7rem;
+  margin-top: -3.4rem;
+  }
+}
 .orange{
   color: #d7471e;
 }
