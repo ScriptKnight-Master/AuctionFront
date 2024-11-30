@@ -504,6 +504,7 @@ header{
   background: #f7f7f7;
 }
 .btn-link {
+  cursor: pointer;
   margin-right: 30px;
   font-weight: 600;
   font-size: 16px;
@@ -653,6 +654,7 @@ header{
   width: 85px;
 }
 .product-item .btn-link {
+  cursor: pointer;
   text-decoration: none;
 }
 .product-item #quantity {
@@ -703,6 +705,7 @@ header{
   height: 44px;
 }
 .signin .btn{
+  cursor: pointer;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left:  28px;
@@ -747,11 +750,13 @@ header{
   }
   
   .offcanvas-body .nav-item.signin .btn{
+    cursor: pointer;
     width: 290px;
     border: none;
     height: 100%;
   }
   .offcanvas-body .nav-item.signin .btn:focus-visible{
+    cursor: pointer;
     border: none;
     box-shadow: none;
   }
@@ -934,6 +939,7 @@ footer{
   border-radius: 5px;
 }
 .bid-check-btn{
+  cursor: pointer;
   background-color: #000080;
   color: white;
   border-radius: 10px;
@@ -962,6 +968,7 @@ footer{
   align-items: center;  
 }
 .view-auction-btn{
+  cursor: pointer;
   color: white; 
   font-size: 1.5rem; 
   width: 250px; 
@@ -970,7 +977,7 @@ footer{
 }
 .view-auction-btn:active, 
 .view-auction-btn:hover
-{
+{  cursor: pointer;
   color: #000080 !important;
   background-color: white !important;
 }
@@ -1112,10 +1119,12 @@ footer{
 
 /* Carousel */
 .swiper-div-for-btn{
+  cursor: pointer;
   padding-left: 60px;
   padding-right: 60px;
 }
 .carousel-prev-btn{
+  cursor: pointer;
   position: absolute;
   left: 10px;
   top: calc(50% - 20px);
@@ -1137,10 +1146,14 @@ footer{
 }
 @media screen and (max-width:768px) {
   .swiper-div-for-btn{
+    cursor: pointer;
+    cursor: pointer;
     padding-left: 0px;
     padding-right: 0px;
   }
   .carousel-prev-btn{
+    cursor: pointer;
+    cursor: pointer;
     position: absolute;
     left: calc(50% - 50px);
     top: 100%;
@@ -1151,6 +1164,7 @@ footer{
     border: 1px solid #aaa;
   }
   .carousel-next-btn{
+    cursor: pointer;
     position: absolute;
     right: calc(50% - 50px);
     top: 100%;
@@ -1161,13 +1175,16 @@ footer{
     border: 1px solid #aaa;
   }
   .btn-carousel-more-btn{
+    cursor: pointer;
     display: none !important;
   }
 }
 .btn-carousel-more-btn{
+  cursor: pointer;
   display: block;
 }
 .bid-card-place-btn{
+  cursor: pointer;
   padding-top: 10px;
   padding-bottom: 10px;
   background-color: white;
@@ -1329,6 +1346,7 @@ line-height: 1.4rem;
     display: none;
   }
   .swiper-related-div-for-btn{
+    cursor: pointer;
     padding-left: 0px !important;
     padding-right: 0px !important;
   }
@@ -1341,6 +1359,7 @@ line-height: 1.4rem;
   }
 }
 .swiper-related-div-for-btn{
+  cursor: pointer;
   padding-left: 60px;
   padding-right: 60px;
 }
@@ -1386,4 +1405,26 @@ line-height: 1.4rem;
     background-image: url(./assets/images/login.png);
     background-size: cover;
   }
+}
+.signin-btn{
+  cursor: pointer;
+  background-color: white;
+  border: 1px solid #999;
+  border-radius: 10px;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  font-size: 1.3rem;
+}
+.signin-btn:hover{
+  cursor: pointer;
+  background-color: #efefef;
+  border: 1px solid #999;
+  border-radius: 10px;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  font-size: 1.3rem;
 }
