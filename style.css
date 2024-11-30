@@ -1351,3 +1351,39 @@ line-height: 1.4rem;
 .sm-pagination{
   display: none;
 }
+.sm-footer{
+  display: none !important;
+}
+.loginform{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50vw;
+  height: 100vh;
+}
+.login-back{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50vw;
+  height: 100vh;
+  background-image: url(./assets/images/login.png);
+  background-size: cover;
+}
+@media screen and (max-width: 991px) {
+  .sm-footer{
+    display: block !important;
+  }
+  .loginform{
+    position: relative;
+
+    width: 100%;
+  }
+  .login-back{
+    position: relative;
+
+    width: 100%;
+    background-image: url(./assets/images/login.png);
+    background-size: cover;
+  }
+}
