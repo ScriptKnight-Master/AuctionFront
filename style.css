@@ -1010,10 +1010,47 @@ footer{
 }
 .more-bid-card{
   border-radius: 15px;
+  aspect-ratio: 1.2;
 }
 .more-bid-card-img{
   border-radius: 15px;
   width: 100%;
-  height: 80%;
+  background-size: cover;
   background-image: url(./assets/images/ipad9girl.png);
+}
+.more-bid-card-panel{
+  aspect-ratio: 4;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+}
+.bid-card{
+  border-radius: 15px;
+  aspect-ratio: 1.2;
+}
+.bid-card-img{
+  border-radius: 15px;
+  width: 100%;
+  background-size: cover;
+  background-image: url(./assets/images/ipad9girl.png);
+}
+.bid-card-panel{
+  aspect-ratio: 4;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+}
+.btn-more-actions{
+  background-color: #000080;
+  color: white;
+  line-height: 33px;
+}
+.btn-more-actions:hover{
+  background-color: #000162;
+  color: white;
+  line-height: 33px;
 }
