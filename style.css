@@ -1386,7 +1386,7 @@ line-height: 1.4rem;
   right: 0;
   width: 50vw;
   height: 100vh;
-  background-image: url(./assets/images/login.png);
+  background-image: url(./assets/images/login.jpg);
   background-size: cover;
 }
 @media screen and (max-width: 991px) {
@@ -1402,7 +1402,7 @@ line-height: 1.4rem;
     position: relative;
 
     width: 100%;
-    background-image: url(./assets/images/login.png);
+    background-image: url(./assets/images/login.jpg);
     background-size: cover;
   }
 }
